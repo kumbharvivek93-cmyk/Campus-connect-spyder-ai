@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}
+Logout
+{% endblock %}
+
+{% block content %}
+
+<div class="container text-center mt-5">
+
+    <div class="card shadow p-4">
+
+        <h2 class="text-danger">You have been logged out</h2>
+
+        <p class="lead mt-3">
+            Thank you for visiting CampusConnect.
+        </p>
+
+        <div class="mt-4">
+
+            <a href="/login" class="btn btn-primary me-2">
+                Login Again
+            </a>
+
+            <a href="/" class="btn btn-secondary">
+                Go to Home
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
