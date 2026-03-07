@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+{% if "name" in session or "email" in session %}
+<h3> welcome {{session["name"]}}</h3>
+
+<h2> now you are a listed volentire</h2>
+
+{% else%}
+
+
+<div class="text-center mt-5">
+
+  <h1>Welcome to CampusConnect</h1>
+
+  <p class="lead">
+    Meet new people from your college and make friends.
+  </p>
+
+  <a href="/signup" class="btn btn-primary">
+    Get Started
+  </a>
+
+</div>
+{%endif%}
+
+{% endblock %}
