@@ -1,0 +1,100 @@
+/* Page Background */
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#667eea,#764ba2,#6a11cb);
+    background-size:400% 400%;
+    animation: gradientMove 12s ease infinite;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animated Gradient */
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Centering area spacing */
+.row{
+    margin-top:80px;
+}
+
+/* Card Style */
+.card{
+    border:none;
+    border-radius:15px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(15px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* Card Body */
+.card-body{
+    padding:40px;
+}
+
+/* Title */
+h3{
+    font-weight:600;
+    color:#fff;
+}
+
+/* Labels */
+.form-label{
+    color:#f1f1f1;
+    font-weight:500;
+}
+
+/* Input Fields */
+.form-control{
+    border-radius:10px;
+    border:none;
+    padding:12px;
+    background:rgba(255,255,255,0.85);
+    transition:all 0.3s ease;
+}
+
+/* Input focus effect */
+.form-control:focus{
+    box-shadow:0 0 10px rgba(255,255,255,0.6);
+    border:none;
+}
+
+/* Login Button */
+.btn-success{
+    background: linear-gradient(45deg,#00c6ff,#0072ff);
+    border:none;
+    padding:12px;
+    font-size:16px;
+    font-weight:600;
+    border-radius:30px;
+    transition:all 0.3s ease;
+}
+
+/* Button hover animation */
+.btn-success:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Bottom Text */
+p{
+    color:#e6e6e6;
+}
+
+/* Signup link */
+a{
+    color:#ffd369;
+    font-weight:500;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
