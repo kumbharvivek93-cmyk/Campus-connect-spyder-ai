@@ -1,1 +1,59 @@
+/* Global Page Style */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* Center Container */
+.text-center {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Main Heading */
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Sub Text */
+.lead {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Welcome message when logged in */
+h3 {
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+/* Volunteer message */
+h2 {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #ffd369;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    border: none;
+    padding: 12px 28px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
 
