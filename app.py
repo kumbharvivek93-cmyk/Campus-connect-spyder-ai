@@ -64,8 +64,11 @@ def login():
     if request.method=="POST":
         email = request.form.get("email")
         password = request.form.get("password")
+        # usr=User.query.filter_by(email=email).delete()   # that is how we can delete one user
+        # db.session.commit()
+        # return redirect(url_for("home"))
 
-        user = User.query.filter_by(email=email).first()
+        user = User.query.filter_by(email=email).first()    # checking from database  !!
 
         if user and user.password == password:
             session["email"] = user.email
@@ -88,6 +91,8 @@ def logout():
 
 @app.route("/finallogout",methods=["GET","POST"])
 def finallogout():
+    
+
     session.clear()
     return render_template("logout.html")
 
@@ -102,6 +107,14 @@ def users():
 def allusers():
     users = User.query.all()
     return render_template("allusers.html", users=users)
+
+
+@app.route("/view",methods=["GET","POST"])
+def view():
+    return render_template("users_view.html", valuse=User.query.all())
+
+
+
 
 
 if __name__=="__main__":
